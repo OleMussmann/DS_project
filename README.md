@@ -28,21 +28,21 @@ NOTEBOOK=isbjornlabs/fastai-notebook-cuda10.1:latest
 
 ### Jupyter Notebook
 
-| action           | command     |
-|------------------|-------------|
+| action           | command    |
+|------------------|------------|
 | start container  | `./dc up`  |
-| stop container   | `CTRL-C`    |
+| stop container   | `CTRL-C`   |
 | remove container | `./dc down`|
 
 ### Bash Shell
 
-| action           | command                                |
-|------------------|----------------------------------------|
-| start container  | `./dc -f docker-compose-bash.yml up`  |
-| enter container  | different terminal: `./enter`          |
-| exit container   | different terminal: `CTRL-D`           |
-| stop container   | `CTRL-C`                               |
-| remove container | `./dc -f docker-compose-bash.yml down`|
+| action           | command                                 |
+|------------------|-----------------------------------------|
+| start container  | `./dc -f docker-compose-bash.yml up`    |
+| enter container  | different terminal: `./enter_container` |
+| exit container   | different terminal: `CTRL-D`            |
+| stop container   | `CTRL-C`                                |
+| remove container | `./dc -f docker-compose-bash.yml down`  |
 
 ### Customization
 Use environment variables to quickly override settings without editing `.env`. Starting a different notebook `jupyter/tensorflow-notebook` on port `1234`:
