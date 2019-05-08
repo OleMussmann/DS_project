@@ -24,30 +24,30 @@ NOTEBOOK=isbjornlabs/fastai-notebook-cuda10.1:latest
 
 ## 📑 Scripts
 
-`d-c` is a (very thin) wrapper around docker-compose, use it just the same.
+`dc` is a (very thin) wrapper around docker-compose, use it just the same.
 
 ### Jupyter Notebook
 
 | action           | command     |
 |------------------|-------------|
-| start container  | `./d-c up`  |
+| start container  | `./dc up`  |
 | stop container   | `CTRL-C`    |
-| remove container | `./d-c down`|
+| remove container | `./dc down`|
 
 ### Bash Shell
 
 | action           | command                                |
 |------------------|----------------------------------------|
-| start container  | `./d-c -f docker-compose-bash.yml up`  |
+| start container  | `./dc -f docker-compose-bash.yml up`  |
 | enter container  | different terminal: `./enter`          |
 | exit container   | different terminal: `CTRL-D`           |
 | stop container   | `CTRL-C`                               |
-| remove container | `./d-c -f docker-compose-bash.yml down`|
+| remove container | `./dc -f docker-compose-bash.yml down`|
 
 ### Customization
 Use environment variables to quickly override settings without editing `.env`. Starting a different notebook `jupyter/tensorflow-notebook` on port `1234`:
 
 ```
-NOTEBOOK=jupyter/tensorflow-notebook PORT=1234 ./d-c up
+NOTEBOOK=jupyter/tensorflow-notebook PORT=1234 ./dc up
 ```
 
