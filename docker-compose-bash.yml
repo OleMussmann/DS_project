@@ -1,0 +1,13 @@
+version: '2.3'
+services:
+  data_science:
+    image: ${NOTEBOOK}
+    user: root
+    environment:
+      - NB_USER=${USER-jovyan}
+      - NB_UID=${UID-1000}
+    command: bash -c "start.sh && sleep infinity"
+    runtime: nvidia
+    volumes:
+      - ${WORKDIR-./workdir/}:/workdir/
+    working_dir: /workdir

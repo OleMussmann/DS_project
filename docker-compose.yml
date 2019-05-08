@@ -1,0 +1,16 @@
+version: '2.3'
+services:
+  data_science:
+    image: ${NOTEBOOK}
+    user: root
+    environment:
+      - NB_USER=${USER-jovyan}
+      - NB_UID=${UID-1000}
+      - JUPYTER_ENABLE_LAB=${JUPYTER_ENABLE_LAB-yes}
+    command: start-notebook.sh --LabApp.custom_display_url=http://localhost:${PORT-8888}
+    runtime: nvidia
+    ports:
+      - 8888:${PORT-8888}
+    volumes:
+      - ${WORKDIR-./workdir/}:/workdir/
+    working_dir: /workdir

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./d-c exec data_science bash -c "start.sh"
