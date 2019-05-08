@@ -15,12 +15,12 @@ git clone git@github.com:OleMussmann/DS_project.git
 mv DS_project MyDataScienceProject
 ```
 
-3. Edit the `.env` file, choose a docker container for the `NOTEBOOK` variable, for example:
+3. Edit the `.env` file and choose a docker container for the `NOTEBOOK` variable, for example:
 ```
 NOTEBOOK=isbjornlabs/fastai-notebook-cuda10.1:latest
 ```
 
-4. For quick testing, just use the `workdir` folder to preserve your scripts and data. For a serious project, please use a proper project structure like [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/#getting-started) within the `workdir`.
+4. For quick testing, just use the `workdir` folder to preserve your scripts and data. For a serious project, please consider a proper project structure like [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/#getting-started) within the `workdir`.
 
 ## 📑 Scripts
 
@@ -45,7 +45,7 @@ NOTEBOOK=isbjornlabs/fastai-notebook-cuda10.1:latest
 | remove container | `./d-c -f docker-compose-bash.yml down`|
 
 ### Customization
-Use environment variables to quickly override settings without editing `.env`. For example starting a different notebook `jupyter/tensorflow-notebook` on port `1234`:
+Use environment variables to quickly override settings without editing `.env`. Starting a different notebook `jupyter/tensorflow-notebook` on port `1234`:
 
 ```
 NOTEBOOK=jupyter/tensorflow-notebook PORT=1234 ./d-c up
