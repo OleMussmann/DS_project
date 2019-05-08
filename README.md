@@ -28,7 +28,7 @@ NOTEBOOK=isbjornlabs/fastai-notebook-cuda10.1:latest
 
 ### Jupyter Notebook
 
-|||
+| action           | command     |
 |------------------|-------------|
 | start container  | `./d-c up`  |
 | stop container   | `CTRL-C`    |
@@ -36,12 +36,12 @@ NOTEBOOK=isbjornlabs/fastai-notebook-cuda10.1:latest
 
 ### Bash Shell
 
-|||
-|------------------|-------------|
+| action           | command                                |
+|------------------|----------------------------------------|
 | start container  | `./d-c -f docker-compose-bash.yml up`  |
-| enter container  | different terminal: `./enter`  |
-| exit container   | different terminal: `CTRL-D`  |
-| stop container   | `CTRL-C`    |
+| enter container  | different terminal: `./enter`          |
+| exit container   | different terminal: `CTRL-D`           |
+| stop container   | `CTRL-C`                               |
 | remove container | `./d-c -f docker-compose-bash.yml down`|
 
 ### Customization
