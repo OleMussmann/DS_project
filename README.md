@@ -26,7 +26,7 @@ NOTEBOOK=isbjornlabs/fastai-notebook-cuda10.1:latest
 
 ## 📑 Scripts
 
-[`dc`](dc) is a (very thin) wrapper around docker-compose, use it just the same. [`enter_container`][enter_container] starts a `bash`-shell in an existing container, if you prefer to work without Jupyter notebooks.
+[`dc`](dc) is a (very thin) wrapper around docker-compose, use it just the same. [`enter_container`](enter_container) starts a `bash`-shell in an existing container, if you prefer to work without Jupyter notebooks.
 
 ### Jupyter Notebook
 
